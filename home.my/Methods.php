@@ -3,7 +3,7 @@ namespace Methods
 {
     class ArrayManipulator
     {
-        public static function GetNumbersFrom0To($number)
+        public static function GetNumberArrayFrom0To($number)
         {
             $numberArray = [];
             for ($i = 1; $i <= $number; $i++) {
@@ -35,7 +35,7 @@ namespace Methods
             return $primeNumberArray;
         }
 
-        public static function GetPalindromeNumbersFrom($array)
+        public static function GetPalindromeNumberArrayFrom($array)
         {
             $palindromeArray = [];
             foreach ($array as $number) {
@@ -49,7 +49,7 @@ namespace Methods
             return $palindromeArray;
         }
 
-        public static function GetGeneratedPasswordFrom($numberArray, $passwordLength)
+        public static function GetGeneratedPasswordStringFrom($numberArray, $passwordLength)
         {
             $passwordStr = "";
             while (strlen($passwordStr) < $passwordLength) {

@@ -9,11 +9,11 @@ namespace Program
     $passwordMaxLengthIsValid = $passwordMaxLength >= passwordMinLength;
 
     if ($passwordMaxLengthIsValid) {
-        $numberArray = \Methods\ArrayManipulator::GetNumbersFrom0To($numberTotalCount);
+        $numberArray = \Methods\ArrayManipulator::GetNumberArrayFrom0To($numberTotalCount);
         $primeNumberArray = \Methods\ArrayManipulator::GetPrimeNumberArrayFrom($numberArray);
-        $palindromeNumberArray = \Methods\ArrayManipulator::GetPalindromeNumbersFrom($numberArray);
+        $palindromeNumberArray = \Methods\ArrayManipulator::GetPalindromeNumberArrayFrom($numberArray);
         $passwordLength = rand(passwordMinLength, $passwordMaxLength);
-        $password = \Methods\ArrayManipulator::GetGeneratedPasswordFrom($primeNumberArray, $passwordLength);
+        $password = \Methods\ArrayManipulator::GetGeneratedPasswordStringFrom($primeNumberArray, $passwordLength);
 
         echo "Prime numbers : " . join(" ", $primeNumberArray), PHP_EOL;
         echo "Palindrome numbers : " . join(" ", $palindromeNumberArray), PHP_EOL;
