@@ -1,7 +1,6 @@
 <?php
 namespace Methods
 {
-
     class ArrayManipulator
     {
         public static function GetNumbersFrom0To($number)
