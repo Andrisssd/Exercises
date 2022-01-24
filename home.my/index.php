@@ -9,7 +9,7 @@ namespace Program
     $passwordMaxLengthIsValid = $passwordMaxLength >= passwordMinLength;
 
     if ($passwordMaxLengthIsValid) {
-        $numberArray = \Methods\ArrayManipulator::GetNumberArrayFrom0To($numberTotalCount);
+        $numberArray = \Methods\ArrayManipulator::GetNumberArrayFrom1To($numberTotalCount);
         $primeNumberArray = \Methods\ArrayManipulator::GetPrimeNumberArrayFrom($numberArray);
         $palindromeNumberArray = \Methods\ArrayManipulator::GetPalindromeNumberArrayFrom($numberArray);
         $passwordLength = rand(passwordMinLength, $passwordMaxLength);
