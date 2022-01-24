@@ -3,7 +3,7 @@ namespace Methods
 {
     class ArrayManipulator
     {
-        public static function GetNumberArrayFrom0To($number)
+        public static function GetNumberArrayFrom1To($number)
         {
             $numberArray = [];
             for ($i = 1; $i <= $number; $i++) {
